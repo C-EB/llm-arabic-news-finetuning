@@ -1,12 +1,12 @@
-# 📰 Arabic News Fine-Tuning with Qwen LLM
+# Arabic News Fine-Tuning with Qwen LLM
 
-## 📌 Project Overview
+## Project Overview
 
 This project demonstrates the **fine-tuning of a pre-trained Qwen large language model (LLM)** on **Arabic news data**, leveraging modern NLP tooling and scalable inference solutions. The primary objective is to **adapt a multilingual LLM** for **Arabic-specific tasks** such as news understanding, entity extraction, and summarization.
 
 ---
 
-## 🎯 Goal
+## Goal
 
 * Customize a base LLM (Qwen) for **Arabic news comprehension** using **supervised fine-tuning (SFT)**.
 * Evaluate its ability to handle **downstream tasks** in Arabic (NER, translation).
@@ -15,7 +15,7 @@ This project demonstrates the **fine-tuning of a pre-trained Qwen large language
 
 ---
 
-## 🚀 Tools & Libraries Used
+## Tools & Libraries Used
 
 | Tool                           | Purpose                                 |
 | ------------------------------ | --------------------------------------- |
@@ -30,7 +30,7 @@ This project demonstrates the **fine-tuning of a pre-trained Qwen large language
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 llm_finetuning/
@@ -43,25 +43,25 @@ llm_finetuning/
 
 ---
 
-## 🔄 Workflow Summary
+## Workflow Summary
 
-### 1. 📦 Environment Setup
+### 1. Environment Setup
 
 * Installation of required libraries via `pip`.
 * Hugging Face, LLaMA-Factory, and vLLM configuration.
 
-### 2. 📑 Data Preparation
+### 2. Data Preparation
 
 * Dataset converted to structured JSON using **Pydantic** models.
 * Format: Instruction-style prompts with input-output pairs.
 
-### 3. 🧠 Model Fine-Tuning (SFT)
+### 3. Model Fine-Tuning (SFT)
 
 * Based on **Qwen** LLM with LoRA adapters for efficient training.
 * Configured and launched with `LLaMA-Factory`.
 * Tracked on **WandB** for monitoring.
 
-### 4. 🧪 Evaluation
+### 4. Evaluation
 
 * Custom prompts used to validate capabilities:
 
@@ -69,18 +69,18 @@ llm_finetuning/
   * Named Entity Recognition
   * Translation
 
-### 5. ⚡ Inference with vLLM
+### 5. Inference with vLLM
 
 * Model served with **vLLM** for ultra-fast inference.
 * Cost-effective token usage validated.
 
-### 6. 💸 Token Cost Estimation
+### 6. Token Cost Estimation
 
 * Calculated expected cost of using the fine-tuned model per 1K tokens.
 
 ---
 
-## 📊 Results
+## Results
 
 | Task            | Result                                                   |
 | --------------- | -------------------------------------------------------- |
@@ -89,11 +89,11 @@ llm_finetuning/
 | Translation     | Maintains fluency and meaning between Arabic and English |
 | Inference Speed | Significantly faster via vLLM vs traditional pipelines   |
 
-✅ The fine-tuned model demonstrates **enhanced understanding** of Arabic language nuances in real-world news.
+The fine-tuned model demonstrates **enhanced understanding** of Arabic language nuances in real-world news.
 
 ---
 
-## 👤 Author
+## Author
 
 Made with ❤️ by **Charif El Belghiti**
 
@@ -101,9 +101,9 @@ Made with ❤️ by **Charif El Belghiti**
 
 ## 📚 Useful Resources
 
-* [LLaMA-Factory GitHub](https://github.com/hiyouga/LLaMA-Factory)
-* [Qwen Model on Hugging Face](https://huggingface.co/Qwen)
-* [vLLM: Fast Inference Engine](https://github.com/vllm-project/vllm)
+* [LLaMA-Factory GitHub](https://github.com/hiyouga/LLaMA-Factory)  
+* [Qwen Model on Hugging Face](https://huggingface.co/Qwen)  
+* [vLLM: Fast Inference Engine](https://github.com/vllm-project/vllm)  
 * [LoRA Paper](https://arxiv.org/abs/2106.09685)
 
 ---
